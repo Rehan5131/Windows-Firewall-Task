@@ -1,0 +1,37 @@
+Windows Firewall Task - Step-by-Step Documentation
+
+1. Open Windows Defender Firewall with Advanced Security:
+   - Go to Start Menu
+   - Type: "Windows Defender Firewall with Advanced Security"
+   - Click to open
+
+2. List Current Inbound Rules:
+   - Left panel → Inbound Rules
+   - Existing rules are shown with their Name, Action, Protocol, and Port
+
+3. Block Port 23 (Telnet):
+   - Click "New Rule" (right panel)
+   - Select "Port" → TCP → Enter port 23
+   - Select "Block the connection"
+   - Check all profiles (Domain, Private, Public)
+   - Name the rule: "Block Telnet Port 23"
+
+4. Allow Port 22 (SSH):
+   - Repeat same steps, but enter port 22
+   - Choose "Allow the connection"
+   - Name it: "Allow SSH Port 22"
+
+5. Test Port 23 Block:
+   - In Command Prompt:
+     - `telnet localhost 23`
+     - Should return: "Could not open connection to the host"
+   - Or use Nmap:
+     - `nmap -p 23 localhost`
+
+6. Remove Rule:
+   - Go to Inbound Rules
+   - Right-click on "Block Telnet Port 23" → Click "Delete"
+
+7. Final Result:
+   - Port 23 no longer blocked
+   - Firewall restored to original state
