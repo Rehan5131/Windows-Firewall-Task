@@ -9,11 +9,11 @@ Configure and test basic firewall rules using Windows Defender Firewall on Windo
 - `firewall_commands_documentation.txt` – Full step-by-step configuration guide.
 - `/description/` – Text-based descriptions of each step's output.
 
-## 🛡️ Actions Performed
-- ✅ Blocked Telnet (port 23)
-- ✅ Allowed SSH (port 22)
-- ✅ Tested firewall behavior
-- ✅ Restored to original state
+## Actions Performed
+- Blocked Telnet (port 23)
+- Allowed SSH (port 22)
+- Tested firewall behavior
+- Restored to original state
 
 ## Descriptions
 Detailed text descriptions for each step are provided.
