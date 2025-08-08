@@ -1,0 +1,20 @@
+Windows Firewall Rules Summary
+
+1. Inbound Rule Created:
+   - Name: Block Telnet Port 23
+   - Direction: Inbound
+   - Protocol: TCP
+   - Port: 23
+   - Action: Block
+   - Profiles: Domain, Private, Public
+
+2. Inbound Rule Created:
+   - Name: Allow SSH Port 22
+   - Direction: Inbound
+   - Protocol: TCP
+   - Port: 22
+   - Action: Allow
+   - Profiles: Domain, Private, Public
+
+3. Rule Removed:
+   - Name: Block Telnet Port 23
