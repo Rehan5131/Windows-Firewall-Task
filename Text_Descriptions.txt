@@ -1,0 +1,31 @@
+step1_open_firewall:
+The main window shows three panels:
+- Left: Tree view with options (Inbound Rules, Outbound Rules, etc.)
+- Center: List of rules
+- Right: Actions menu (New Rule, Filter by Profile, etc.)
+
+step2_block_port_23:
+This step would show the "New Inbound Rule Wizard" on the screen, specifically:
+- Rule Type: Port
+- Protocol: TCP
+- Port: 23
+- Action: Block the connection
+- Profile: Domain, Private, Public
+- Name: Block Telnet Port 23
+Once completed, the new rule appears in the Inbound Rules list with Action = Block.
+
+step3_allow_port_22:
+This step would show the New Inbound Rule created:
+- Rule Type: Port
+- Protocol: TCP
+- Port: 22
+- Action: Allow the connection
+- Profiles: All selected
+- Name: Allow SSH Port 22
+Appears in the list of Inbound Rules with Action = Allow.
+
+step4_removed_rule:
+This step would show the Inbound Rules list after the "Block Telnet Port 23" rule is removed.
+You can confirm:
+- The "Block Telnet Port 23" no longer appears
+- "Allow SSH Port 22" still remains (if not deleted)
